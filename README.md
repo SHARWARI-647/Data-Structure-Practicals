@@ -97,7 +97,7 @@ Mastering these structures helps in developing efficient algorithms and optimizi
 
 | Practical | Description | Link |
 |------------|--------------|------|
-| Practical_1_a.c | Array and calculate the sum | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/main/Practical_1_a.c) |
+| Practical_1_a.c | Array and calculate the sum | [View Code](main/Practical_1_a.c) |
 | Practical_1_b.c | Binary Search algorithm | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/main/Practical_1_b.c) |
 | Practical_1_c.c | Structure and Bubble Sort | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/main/Practical_1_c.c) |
 | Practical_2.c | Stack Implementation | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/main/Practical_2.c) |
