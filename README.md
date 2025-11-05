@@ -97,8 +97,8 @@ Mastering these structures helps in developing efficient algorithms and optimizi
 
 | Practical | Description | Link |
 |------------|--------------|------|
-| Practical_1_a.c | Array and calculate the sum | [View Code](Practical_1_a.c) |
-| Practical_1_b.c | Binary Search algorithm | [View Code](Practical_1_b.c) |
+| Practical_1_a.c | Array and calculate the sum | [View Code](Data-Structure-Practicals/Practical_1_a.c) |
+| Practical_1_b.c | Binary Search algorithm | [View Code](Data-Structure-Practicals/Practical_1_b.c) |
 | Practical_1_c.c | Structure and Bubble Sort | [View Code](Practical_1_c.c) |
 | Practical_2.c | Stack Implementation | [View Code](Practical_2.c) |
 | Practical_3.c | Queue Implementation | [View Code](Practical_3.c) |
