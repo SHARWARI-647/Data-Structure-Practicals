@@ -97,18 +97,18 @@ Mastering these structures helps in developing efficient algorithms and optimizi
 
 | Practical | Description | Link |
 |------------|--------------|------|
-| Practical_1_a.c | Array and calculate the sum | [View Code](Data-Structure-Practicals/Practical_1_a.c) |
-| Practical_1_b.c | Binary Search algorithm | [View Code](Data-Structure-Practicals/Practical_1_b.c) |
-| Practical_1_c.c | Structure and Bubble Sort | [View Code](Practical_1_c.c) |
-| Practical_2.c | Stack Implementation | [View Code](Practical_2.c) |
-| Practical_3.c | Queue Implementation | [View Code](Practical_3.c) |
-| Practical_4.c | Linked List Operations | [View Code](Practical_4.c) |
-| Practical_5.c | Binary Tree and Traversal | [View Code](Practical_5.c) |
-| Practical_6.c | Binary Search Tree (Insertion, Deletion, Search) | [View Code](Practical_6.c) |
-| Practical_7.c | Undirected Graph (BFS and DFS) | [View Code](Practical_7.c) |
-| Practical_8.c | Dijkstra Algorithm | [View Code](Practical_8.c) |
-| Practical_9.c | Hash Table Implementation | [View Code](Practical_9.c) |
-| Practical_10.c | Copy File Contents into Another File | [View Code](Practical_10.c) |
+| Practical_1_a.c | Array and calculate the sum | [View Code](main/Practical_1_a.c) |
+| Practical_1_b.c | Binary Search algorithm | [View Code](main/Practical_1_b.c) |
+| Practical_1_c.c | Structure and Bubble Sort | [View Code](main/Practical_1_c.c) |
+| Practical_2.c | Stack Implementation | [View Code](main/Practical_2.c) |
+| Practical_3.c | Queue Implementation | [View Code](main/Practical_3.c) |
+| Practical_4.c | Linked List Operations | [View Code](main/Practical_4.c) |
+| Practical_5.c | Binary Tree and Traversal | [View Code](main/Practical_5.c) |
+| Practical_6.c | Binary Search Tree (Insertion, Deletion, Search) | [View Code](main/Practical_6.c) |
+| Practical_7.c | Undirected Graph (BFS and DFS) | [View Code](main/Practical_7.c) |
+| Practical_8.c | Dijkstra Algorithm | [View Code](main/Practical_8.c) |
+| Practical_9.c | Hash Table Implementation | [View Code](main/Practical_9.c) |
+| Practical_10.c | Copy File Contents into Another File | [View Code](main/Practical_10.c) |
 
 ---
 
