@@ -97,18 +97,22 @@ Mastering these structures helps in developing efficient algorithms and optimizi
 
 | Practical | Description | Link |
 |------------|--------------|------|
-| Practical_1_a.c | Array and calculate the sum | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Practical_10.c)|
-| Practical_1_b.c | Binary Search algorithm | [View Code](Practical_1_b.c) |
-| Practical_1_c.c | Structure and Bubble Sort | [View Code](Practical_1_c.c) |
-| Practical_2.c | Stack Implementation | [View Code](Practical_2.c) |
-| Practical_3.c | Queue Implementation | [View Code](Practical_3.c) |
-| Practical_4.c | Linked List Operations | [View Code](Pactical_4.c) |
-| Practical_5.c | Binary Tree and Traversal | [View Code](Practical_5.c) |
-| Practical_6.c | Binary Search Tree (Insertion, Deletion, Search) | [View Code](Practical_6.c) |
-| Practical_7.c | Undirected Graph (BFS and DFS) | [View Code](Practical_7.c) |
-| Practical_8.c | Dijkstra Algorithm | [View Code](Practical_8.c) |
-| Practical_9.c | Hash Table Implementation | [View Code](Practical_9.c) |
-| Practical_10.c | Copy File Contents into Another File | [View Code](Practical_10.c) |
+| Practical_1_a.c | Array and calculate the sum | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/practical_1_a.c)|
+| Practical_1_b.c | Binary Search algorithm | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/practical_1_b.c) |
+| Practical_1_c.c | Structure and Bubble Sort | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/practical_1_c.c
+) |
+| Practical_2.c | Stack Implementation | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_2.c) |
+| Practical_3.c | Queue Implementation | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_3.c
+) |
+| Practical_4.c | Linked List Operations | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Practical_4.c
+) |
+| Practical_5.c | Binary Tree and Traversal | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_5.c) |
+| Practical_6.c | Binary Search Tree (Insertion, Deletion, Search) | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_6.c) |
+| Practical_7.c | Undirected Graph (BFS and DFS) | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_7.c) |
+| Practical_8.c | Dijkstra Algorithm | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_8.c) |
+| Practical_9.c | Hash Table Implementation | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Prcatical_9.c
+) |
+| Practical_10.c | Copy File Contents into Another File | [View Code](https://github.com/SHARWARI-647/Data-Structure-Practicals/blob/d40a22616923ffe7853431305cd5d3d3f1a810ee/Practical_10.c) |
 
 ---
 
