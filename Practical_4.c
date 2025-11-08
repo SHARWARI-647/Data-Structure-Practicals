@@ -41,7 +41,7 @@ void insertAtEnd(int data) {
     temp->next = newNode;
 }
 
-// ✅ Corrected insert at specific position
+//  insert at specific position
 void insertAtPosition(int data, int pos) {
     if (pos < 1) {
         printf("Invalid position!\n");
@@ -67,7 +67,7 @@ void insertAtPosition(int data, int pos) {
     }
 
     newNode->next = temp->next;
-    temp->next = newNode; // ✅ Fixed line (was wrong in your code)
+    temp->next = newNode; // 
 }
 
 // Delete at beginning
@@ -102,7 +102,6 @@ void deleteAtEnd() {
     temp->next = NULL;
 }
 
-// ✅ Corrected delete at specific position
 void deleteAtPosition(int pos) {
     if (head == NULL) {
         printf("List is empty!\n");

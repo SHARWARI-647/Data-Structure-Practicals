@@ -4,7 +4,6 @@
 3.	Delete leaf element in BST
 4.	Exit
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,7 +21,7 @@ struct Node* createNode(int value) {
     return newNode;
 }
 
-// Recursive insert
+// Insert node recursively
 struct Node* insert(struct Node* root, int value) {
     if (root == NULL)
         return createNode(value);
@@ -35,15 +34,15 @@ struct Node* insert(struct Node* root, int value) {
     return root;
 }
 
-// Recursive search
+// Search for a key in BST
 void search(struct Node* root, int key) {
     if (root == NULL) {
-        printf("Key not found!\n");
+        printf("NULL\n");
         return;
     }
 
     if (key == root->data) {
-        printf("Key found!\n");
+        printf("Found\n");
     } else if (key < root->data) {
         search(root->left, key);
     } else {
@@ -51,33 +50,22 @@ void search(struct Node* root, int key) {
     }
 }
 
-// Recursive delete
-struct Node* deleteNode(struct Node* root, int value) {
+// Delete only leaf nodes
+struct Node* deleteLeaf(struct Node* root, int value) {
     if (root == NULL)
-        return root;
+        return NULL;
 
     if (value < root->data)
-        root->left = deleteNode(root->left, value);
+        root->left = deleteLeaf(root->left, value);
     else if (value > root->data)
-        root->right = deleteNode(root->right, value);
+        root->right = deleteLeaf(root->right, value);
     else {
-        // Node found
+        // Found the node — delete only if it is a leaf
         if (root->left == NULL && root->right == NULL) {
             free(root);
             return NULL;
-        } else if (root->left == NULL) {
-            struct Node* temp = root->right;
-            free(root);
-            return temp;
-        } else if (root->right == NULL) {
-            struct Node* temp = root->left;
-            free(root);
-            return temp;
         } else {
-            // Two children: find inorder successor
-            struct Node* temp = findMin(root->right);
-            root->data = temp->data;
-            root->right = deleteNode(root->right, temp->data);
+            printf("Cannot delete! Node is not a leaf.\n");
         }
     }
     return root;
@@ -86,37 +74,41 @@ struct Node* deleteNode(struct Node* root, int value) {
 // Menu-driven main function
 int main() {
     struct Node* root = NULL;
-    int choice, value,n;
+    int choice, value, n, i;
 
     while (1) {
-        printf("\n--- Recursive Binary Search Tree Menu ---\n");
-        printf("1. Insert\n2. Delete\n3. Search\n4. Exit\n");
-        printf("Enter your choice: ");
+        printf("\n--- Binary Search Tree Menu ---\n");
+        printf("1. Search an element in BST\n");
+        printf("2. Insert an element in BST\n");
+        printf("3. Delete leaf element in BST\n");
+        printf("4. Exit\n");
+        printf("\nEnter your choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Enter no. elemnts:: ");
-                scanf("%d",&n);
-                printf("Enter value to insert: ");
-                int arr[n];
-                for(int i=0;i<n;i++){
-                   scanf("%d", &arr[i]);
-                   value=arr[i];
-                   root = insert(root, value);
-                }
+                printf("Enter value to search: ");
+                scanf("%d", &value);
+                search(root, value);
                 break;
 
             case 2:
-                printf("Enter value to delete: ");
-                scanf("%d", &value);
-                root = deleteNode(root, value);
+                printf("Enter number of elements: ");
+                scanf("%d", &n);
+                printf("Enter elements: ");
+                for (i = 0; i < n; i++) {
+                    scanf("%d", &value);
+                    root = insert(root, value);
+                }
+                printf("All Elements inserted successfully.");
+                printf("\n");
                 break;
 
             case 3:
-                printf("Enter key to search: ");
+                printf("Enter leaf node value to delete: ");
                 scanf("%d", &value);
-                search(root, value);
+                root = deleteLeaf(root, value);
+                printf("Leaf node %d deletion : ",value);
                 break;
 
             case 4:
@@ -129,4 +121,3 @@ int main() {
     }
     return 0;
 }
-

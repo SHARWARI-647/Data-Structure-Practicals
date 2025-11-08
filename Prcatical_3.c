@@ -6,95 +6,101 @@ d. Display the status of QUEUE
 e. Exit
 Support the program with appropriate functions for each of the above operations.	
 */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-#define MAX 5   // Maximum size of the queue
-
-char queue[MAX];
-int front = -1, rear = -1;
-
-// Function to insert an element into the queue
-void insert() {
-    char element;
-
-    if (rear == MAX - 1) {
-        printf("\nQueue Overflow! Cannot insert more elements.\n");
-        return;
-    }
-
-    printf("Enter a character to insert: ");
-    scanf(" %c", &element);
-
-    if (front == -1) front = 0; // First insertion
-    rear++;
-    queue[rear] = element;
-
-    printf("'%c' inserted into the queue.\n", element);
-}
-
-// Function to delete an element from the queue
-void delete() {
-    if (front == -1 || front > rear) {
-        printf("\nQueue Underflow! No elements to delete.\n");
-        front = rear = -1; // Reset queue
-        return;
-    }
-
-    printf("Deleted element: '%c'\n", queue[front]);
-    front++;
-
-    // Reset queue when last element is deleted
-    if (front > rear) {
-        front = rear = -1;
-    }
-}
-
-// Function to display the queue
-void display() {
-    if (front == -1) {
-        printf("\nQueue is empty.\n");
-        return;
-    }
-
-    printf("\nCurrent Queue: ");
-    for (int i = front; i <= rear; i++) {
-        printf("%c ", queue[i]);
-    }
-    printf("\nFront = %d, Rear = %d\n", front, rear);
-}
-
-// Main function with menu-driven implementation
-int main() {
-    int choice;
-
-    while (1) {
-        printf("\n===== QUEUE OPERATIONS MENU =====");
-        printf("\n1. Insert an Element");
-        printf("\n2. Delete an Element");
-        printf("\n3. Display Queue");
-        printf("\n4. Exit");
-        printf("\n----------------------------------");
-        printf("\nEnter your choice: ");
-        scanf("%d", &choice);
-
-        switch (choice) {
-            case 1:
-                insert();
-                break;
-            case 2:
-                delete();
-                break;
-            case 3:
-                display();
-                break;
-            case 4:
-                printf("\nExiting the program. Goodbye!\n");
-                exit(0);
-            default:
-                printf("\nInvalid choice! Please try again.\n");
-        }
-    }
-    return 0;
-}
+/* Linear Queue */ 
+#include<stdio.h> 
+#include<conio.h> 
+#define MAX 5 
+struct queue 
+{ 
+int a[MAX]; 
+int f,r; 
+}; 
+void init(struct queue *q) 
+{ 
+q->f=q->r=-1; 
+} 
+int isempty(struct queue *q) 
+{ 
+if(q->r==-1) 
+return 1; 
+else 
+return 0; 
+} 
+int isfull(struct queue *q) 
+{ 
+if(q->r==MAX-1) 
+return 1; 
+else 
+return 0; 
+} 
+void insert(struct queue *q,int x) 
+{ 
+if(q->r==-1) 
+{ 
+q->f=q->r=0; 
+} 
+else 
+{ 
+q->r=q->r+1; 
+} 
+q->a[q->r]=x; 
+} 
+int delete(struct queue *q) 
+{ 
+int x; 
+x=q->a[q->f]; 
+if(q->f==q->r) 
+{ 
+q->f=q->r=-1; 
+} 
+else 
+{ 
+q->f=q->f+1; 
+} 
+return x; 
+} 
+void print(struct queue *q) 
+{ 
+int i; 
+printf("\n"); 
+for(i=q->f;i<=q->r;i++) 
+printf("%d\t",q->a[i]); 
+} 
+void main() 
+{ 
+struct queue q; 
+int x,op;   
+init(&q); 
+printf("1.Insert\n2.Delete\n3.Print\n4.Quit"); 
+do 
+ { 
+  printf("\nEnter choice: "); 
+  scanf("%d",&op); 
+   
+switch(op) 
+  { 
+   case 1: 
+    if(isfull(&q)) 
+     printf("\nOverflow"); 
+    else 
+    { 
+     printf("\nEnter value: "); 
+     scanf("%d",&x); 
+     insert(&q,x); 
+    } 
+     break; 
+   case 2: 
+    if(isempty(&q)) 
+     printf("\nUnderflow"); 
+    else 
+    { 
+     x=delete(&q); 
+     printf("\nDeleted Value=%d",x); 
+    } 
+    break; 
+   case 3: 
+    print(&q); 
+    break; 
+  } 
+ }while(op!=4); 
+} 
