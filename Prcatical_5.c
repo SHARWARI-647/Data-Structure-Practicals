@@ -54,7 +54,7 @@ void postorder(struct Node* t){
 
 void search(struct Node* root,int key){
       if(root!=NULL){
-        if(root==key){
+        if(root->data==key){
             printf("key found..");
         }else{
             if(root->data>key)
@@ -70,44 +70,44 @@ void search(struct Node* root,int key){
 int main() {
     struct Node* root = NULL;
     int choice, value;
-
-    while (1) {
-        printf("\n--- Binary Search Tree Menu ---\n");
+printf("\n--- Binary Search Tree Menu ---\n");
         printf("1. Insert\n2. Inorder Traversal\n3. Preorder Traversal\n4. Postorder Traversal\n5. Search\n6. Exit\n");
-        printf("Enter your choice: ");
+        
+    while (1) {
+        printf("\nEnter your choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Enter value to insert: ");
+                printf("\nEnter value to insert: ");
                 scanf("%d", &value);
                 root = insert(root, value);
                 break;
             case 2:
-                printf("Inorder: ");
+                printf("\nInorder: ");
                 inorder(root);
                 printf("\n");
                 break;
             case 3:
-                printf("Preorder: ");
+                printf("\nPreorder: ");
                 preorder(root);
                 printf("\n");
                 break;
             case 4:
-                printf("Postorder: ");
+                printf("\nPostorder: ");
                 postorder(root);
                 printf("\n");
                 break;
             case 5:
-               printf("Enter key to search: ");
+               printf("\nEnter key to search: ");
                scanf("%d", &value);
                search(root, value);
                 break;
             case 6:
                 exit(0);
             default:
-                printf("Invalid choice!\n");
+                printf("\nInvalid choice!\n");
         }
     }
-    return 0;
+    return 0;
 }   
